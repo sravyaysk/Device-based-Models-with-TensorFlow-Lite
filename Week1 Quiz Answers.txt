@@ -1,0 +1,88 @@
+Week 1 Quiz Answers
+
+1.
+Question 1
+What platforms are supported by TensorFlow Lite (Check all that apply)
+iOS - Correct
+Some Microcontrollers - Correct
+Raspberry Pi - Correct
+Android - Correct
+Windows Phone - InCorrect
+
+2.
+Question 2
+What is Quantization?
+A technique that increases precision to ensure your model works better on mobile
+A technique that reduces precision and model size to work better on mobile - Correct
+A technique to optimize the size of a model for the memory map of a mobile device
+A technique to ensure compatibility across all supported platforms
+
+
+3.
+Question 3
+The TFLite file format is an example of what?
+A checkpoint
+A concrete function
+A flatbuffer - Correct
+A savedmodel
+
+4.
+Question 4
+Which types of input does the TF Lite Convertor API Accept (Check all that apply)
+A set of concrete functions - Correct
+A Keras HDF5 file - Correct
+A list of checkpoints - InCorrect
+A SavedModel - Correct
+A model object - InCorrect
+
+5.
+Question 5
+True or False: The SavedModel format supports model Versioning
+True - Correct
+False
+
+6.
+Question 6
+If I want to save an existing Keras model, what’s the API signature:
+tf.saved_model.path=path
+tf.saved_model.save(model, path) - Correct
+Tf.model.save(path)
+tf.save(model, path)
+
+7.
+Question 7
+If I want to use the TensorFlow Lite Convertor to convert a saved model to TF Lite, what’s the API signature?
+converter = tf.lite.TFLiteConverter.from_saved_model(path)  
+newModel = converter.convert() - Correct
+
+newModel = tf.lite.TFLiteConverter.fromModel(myModel).convert()
+
+newModel = tf.lite.TFLiteConverter.convert(model_path)
+
+converter = tf.lite.TFLiteConverter.convert()
+newModel = converter.Convert(model_path)
+
+8.
+Question 8
+If I have a keras model and want to convert it, what’s the method signature on TFLiteConverter
+convert(model)
+from_keras_model(model) - Correct
+convert_keras_model(model)
+from_keras(model)
+
+9.
+Question 9
+If I want to convert using a command line tool, what’s the name of the tool?
+Tflite_to_model
+tfliteconvert
+tflite_convert  - Correct
+tf_convert_lite
+
+10.
+Question 10
+If I want to do post training quantization, what are the optimization options available (check all that apply)
+OPTIMIZE_FOR_SIZE - Correct
+OPTIMIZE_FOR_IOS
+OPTIMIZE_FOR_ANDROID
+OPTIMIZE_FOR_LATENCY - Correct
+OPTIMIZE_FOR_PERFORMANCE
