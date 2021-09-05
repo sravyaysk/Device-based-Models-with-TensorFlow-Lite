@@ -1,0 +1,64 @@
+Week 3 Quiz
+
+Question 1
+What technology is used to deploy addons like TensorFlow Lite to iOS applications?
+Gradle
+Cocoapods - Correct
+Applepods
+VSNs
+
+Question 2
+What is the name of the pod that you use to add TF Lite to an iOS app with the Swift language?
+TensorFlowLite
+TensorFlowSwift
+TensorFlowLiteSwift - Correct
+LiteSwift
+
+Question 3
+How do you deploy a model to iOS for offline use?
+You convert it to swift code and use it as an activity
+You add is as part of the app bundle - Correct
+You bundle model and interpreter as a resource file
+You download it at runtime
+
+Question 4
+How does iOS represent images in memory?
+An NSPixelArray
+An array of bytes
+A CVPixelBuffer - Correct
+Image class
+
+Question 5
+How do you do inference with a TF Lite interpreter in Swift?
+Copy values to input tensor, call interpreter.invoke(), copy outputs to output Tensor - Correct
+interpreter.run(input, output)
+Copy values to input tensor, call interpreter.run(), copy outputs to output Tensor
+interpreter.invoke(input, output)
+
+Question 6
+How do you specify the number of threads that the interpreter should use?
+Call the setThreads() method on an InterpreterOptions object and specify the desired amount
+Use an InterpreterOptions object and set its threads property to the desired amount
+Use an InterpreterOptions object and set it’s useThreads property to true
+Use an InterpreterOptions object and set its threadCount property to the desired amount - Correct
+
+Question 7
+What format is an image in a CVPixelBuffer?
+RGB_32
+BGRA_32 - Correct
+RGBA_32
+BGR_32
+
+Question 8
+How can you tell if a model is quantized at runtime?
+Check the inputTensor Data type. If it’s uInt8, the model is quantized - Correct
+Check the isQuantized property on the interpreter. If it is true, the model is quantized
+Check the isQuantized property on the input tensor. If it is true, the model is quantized
+Check the modelFormat data type. If it’s uInt8, the model is quantized
+
+Question 9
+In what order does the object detection model report the bounding box parameters?
+x, y, width, height
+y, x, width, height
+x, y, height, width
+y, x, height, width - Correct
