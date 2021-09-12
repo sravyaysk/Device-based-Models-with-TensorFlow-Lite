@@ -1,0 +1,57 @@
+Week 4 Quiz
+
+Question 1
+Which Devices support TensorFlow Lite for Inference? (Check all that apply)
+Coral - Correct
+RISC - Incorrect
+Raspberry Pi - Correct
+Sparkfun Edge - Correct
+
+Question 2
+With a Raspberry Pi, how can you use TensorFlow?
+Inference Only
+It doesn’t work on Pi
+Training Only
+Inference and Training - Correct
+
+Question 3
+If you only want to do inference on a Pi, what’s the best way?
+Compile all of TensorFlow from Source and run it
+Do nothing, the Pi base image has TensorFlow in it
+Install the full TensorFlow with Pip install
+Install the standalone interpreter using pip - Correct
+
+Question 4
+When using ImageNet on a Raspberry Pi for Image Classification, how many classes are supported?
+800
+100
+500
+1000 - Correct
+
+Question 5
+How do you initialize the standalone interpreter in Python?
+tf.lite.load(lite_model)
+tf.lite.Interpreter(directory_of_saved_model)
+tf.lite.Interpreter(directory_of_lite_Model) - Correct
+tf.lite.load(saved_model)
+
+Question 6
+How do you get the input tensors for a model with the standalone interpreter?
+Call get_input_tensors() after calling allocate_tensors() on the interpreter
+Call get_input_tensors() after initializing the interpreter
+Call get_input_details() after initializing the interpreter
+Call get_input_details() after calling allocate_tensors() on the interpreter - Correct
+7.
+Question 7
+How do you perform inference using the interpreter?
+Set the Input tensor with the set_tensor command and then call invoke() - Correct
+Call invoke(), and pass it both the input and output tensors
+Call invoke(), and pass it the input tensor
+Just call invoke(), TensorFlow can do the rest
+
+Question 8
+How do you read the results of inference using the interpreter?
+Call invoke(), pass it the input and output tensors, and then read the output tensor
+Call invoke(), and then call get_tensor() on the interpreter to read the output - Correct
+Call invoke(), and the the output will be rendered automatically
+Call invoke(), pass it the input tensor, read the results
